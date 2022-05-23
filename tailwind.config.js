@@ -1,10 +1,7 @@
 module.exports = {
-  purge: [],
-  darkMode: 'class', //  'media'(Device preference) or 'class'(custom on off) or false
+  content: ['./*.{html,js}'],
+  darkMode: 'media',
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],
