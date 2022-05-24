@@ -468,10 +468,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
-@variants hover,focus{
-  .rotate-0{
-    transform:rotate(0deg);
-    background:red;
+/* for all device */
+
+@media (min-width: 640px){
+  /* only for small devic */
+
+  .bg-gradient-brand{
+    background-image:linear-gradient(green,blue);
   }
 }
 
@@ -479,5 +482,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   transform:rotate(0deg);
-  background:red;
+  font-size:20px;
+}
+
+@media (min-width: 640px) {
+  .sm\:bg-gradient-brand{
+    background-image:linear-gradient(blue,green);
+  }
 }
